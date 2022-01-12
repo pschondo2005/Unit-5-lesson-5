@@ -23,6 +23,36 @@ class Main {
           c.setAuthor(up);
            System.out.println(c);     
 
-          System.out.println("Are the books equal? "b.equals(b2));     
+          System.out.println("Are the books equal? "+b.equals(b2));  
+
+          //making some default books
+          Book def1=new Book();
+          Book def2=new Book();
+          Book g=new Book();
+
+          System.out.println("This is defualt book 1 "+def1);  
+         System.out.println("This is defualt book 2 "+def2); 
+          System.out.println("Are the defualt books equal? "+def1.equals(def2));  
+        //create library
+        Library lib=new Library();
+        System.out.println(lib);
+
+        //add books to our library
+        lib.addBooks(b);    
+        lib.addBooks(b2);
+        lib.addBooks(def1);
+        lib.addBooks(def2);
+        lib.addBooks(g);
+        lib.addBooks(b);    
+        lib.addBooks(b2);
+        lib.addBooks(def1);
+        lib.addBooks(def2);
+        lib.addBooks(g);        System.out.println("_______________________________");
+        System.out.println("increasing array size");
+        lib.increaseSize();    System.out.println("_______________________________");    System.out.println(lib);
+
+        lib.addBooks(def2);
+System.out.println("_______________________________");
+        System.out.println(lib);
     }
 }

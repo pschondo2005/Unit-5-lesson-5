@@ -11,11 +11,16 @@ public class Book
   //Constructor
   public Book(String t, String a, int y, int n, boolean h)
   {
-    title = t;
-    author = a;
-    year = y;
-    numPages = n;
-    hardCover = h;
+    setTitle(t);
+    setAuthor(a);
+    setYear(y);
+    setNumPages(n);
+    setHardCover(h);
+  }
+  //overloading the constructor
+  public Book()
+  {
+    this("none","unknown",1900,1,false);
   }
   //accessor methods
   public String getTitle()
